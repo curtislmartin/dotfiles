@@ -1,0 +1,21 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = CurtisLMartin
+	email = 86826694+CurtisLMartin@users.noreply.github.com
+[credential]
+	helper = osxkeychain
+[maintenance]
+	repo = /Users/curtismartin/Library/CloudStorage/OneDrive-UniversityofNewEngland/MOIT
+	repo = /Users/curtismartin/VSCode/field-app
+[core]
+	editor = nvim
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
