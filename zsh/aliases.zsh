@@ -38,6 +38,7 @@ alias ....='cd ../../..'
 alias d='docker'
 alias r='rails'
 n() { if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi; }
+alias ta='tmux a'
 
 # Git
 alias g='git'
